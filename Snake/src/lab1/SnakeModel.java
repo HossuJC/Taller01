@@ -139,6 +139,20 @@ public class SnakeModel extends GameModel {
 
 		// ... add a new fruit to the empty tile.
 		setGameboardState(newFruitPos, FRUIT_TILE);
+		do {
+			newFruitPos = new Position((int) (Math.random() * size.width),
+										(int) (Math.random() * size.height));
+		} while (!isPositionEmpty(newFruitPos));
+
+		// ... add a new fruit to the empty tile.
+		setGameboardState(newFruitPos, FRUIT_TILE);
+		do {
+			newFruitPos = new Position((int) (Math.random() * size.width),
+										(int) (Math.random() * size.height));
+		} while (!isPositionEmpty(newFruitPos));
+
+		// ... add a new fruit to the empty tile.
+		setGameboardState(newFruitPos, FRUIT_TILE);
 	}
 	
 	
